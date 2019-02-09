@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { relative } from "path";
 import { getUser } from "../actionCreator/action";
 import { Link } from "react-router-dom";
 
@@ -16,7 +15,7 @@ const Articles = props => {
   const handleClick = tag => {
     props.dispatch(getUser(tag));
   };
-  //   console.log(props.tags);
+
   return (
     <div>
       <div className="hero">
@@ -27,6 +26,7 @@ const Articles = props => {
       </div>
       <div className="articles-container">
         <ul>
+          <h3>Global Feed</h3>
           {articles &&
             articles.map((article, i) => (
               <li key={i}>

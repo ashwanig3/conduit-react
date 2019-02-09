@@ -48,9 +48,9 @@ const Articles = props => {
             <div className="tag-wrapper">
               {tags &&
                 tags.map(tag => (
-                  <span className="tag-item" onClick={() => handleClick(tag)}>
+                  <Link to={`/articles/${tag}`} className="tag-item">
                     {tag}
-                  </span>
+                  </Link>
                 ))}
             </div>
           </div>

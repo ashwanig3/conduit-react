@@ -49,25 +49,24 @@ nav {
 }
 .hero {
   position: relative;
-  width: 100vw;
   height: 30vh;
   background-color: #5cb85c;
   color: white;
   font-family: "Titillium Web", sans-serif;
-  .hero-description {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    h1 {
-      text-align: center;
-      margin: 0;
-      font-size: 50px;
-    }
-    span {
-      font-size: 25px;
-      font-weight: 100;
-    }
+}
+.hero-description {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+  }
+  span {
+    font-size: 25px;
+    font-weight: 100;
   }
 }
 .articles-container {
@@ -194,5 +193,25 @@ nav {
   a {
     margin-top: 10px;
     color: #5cb85c;
+  }
+}
+
+// =======================================
+// tag articles
+// ======================================
+
+.tag-articles {
+  li {
+    border-top: 0.5px solid lightgray;
+    // border-bottom: 0.5px solid lightgray;
+    padding: 20px 10px;
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
+    .description {
+      color: grey;
+    }
   }
 }

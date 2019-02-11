@@ -6,6 +6,8 @@ import { setArticles, getTags } from "./actionCreator/action";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Profile from "./components/Profile";
 import Tag from "./components/Tag";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 class App extends Component {
   componentDidMount = () => {
@@ -19,10 +21,11 @@ class App extends Component {
           <Header />
           <Switch>
             <Route path="/" exact component={Articles} />
-            <Route path="/:user" exact component={Profile} />
+            <Route path="/:user/articles" exact component={Profile} />
             <Route path="/articles/:tag" exact component={Tag} />
+            <Route path="/login" exact component={Login} />
+            <Route path="/signup" exact component={Signup} />
           </Switch>
-          {/* <Articles /> */}
         </div>
       </BrowserRouter>
     );

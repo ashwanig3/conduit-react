@@ -12,6 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 h1,
 h2,
 h3,
@@ -25,7 +26,8 @@ li {
 a {
   text-decoration: none;
 }
-nav {
+.top-nav {
+  background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
   padding: 10px 80px;
@@ -37,7 +39,6 @@ nav {
     color: #5cb85c;
     font-size: 22px;
     font-weight: 600;
-    margin-top: 10px;
   }
   ul {
     display: flex;
@@ -85,6 +86,8 @@ nav {
     color: lightgray;
   }
   h3 {
+    margin: 0;
+    font-size: 20px;
     margin-top: 20px;
     color: #373a3c;
   }
@@ -213,5 +216,27 @@ nav {
     .description {
       color: grey;
     }
+  }
+}
+
+// ==============================================
+// Login && signup
+// ==============================================
+
+.signup-form {
+  margin: 80px auto;
+  width: 40%;
+  line-height: 4rem;
+  input,
+  button {
+    width: 100%;
+    border-radius: 4px;
+    border: 0.5px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #5cb85c;
+    color: white;
   }
 }

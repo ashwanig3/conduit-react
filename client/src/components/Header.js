@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <nav>
+        <nav className="top-nav">
           <Link to="/" className="app-home">
             Conduit
           </Link>
@@ -14,10 +14,10 @@ export default class Header extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">Login</a>
+              <Link to="/login">Login</Link>
             </li>
             <li>
-              <a href="#">Signup</a>
+              <Link to="/signup">Signup</Link>
             </li>
           </ul>
         </nav>

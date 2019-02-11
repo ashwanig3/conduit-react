@@ -32,7 +32,7 @@ const Articles = props => {
               <li key={i}>
                 <div className="user">
                   <img src={article.author.image} alt="user" />
-                  <Link to={`/${article.author.username}`}>
+                  <Link to={`/${article.author.username}/articles`}>
                     {article.author.username}
                   </Link>
                 </div>
